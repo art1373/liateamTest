@@ -1,0 +1,35 @@
+@import "../../App.scss";
+
+.pagination {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  width: 20%;
+  margin: auto;
+  margin-bottom: 8rem;
+}
+.page-num-wrap {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+}
+.page-num {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 50px;
+  line-height: 1.5rem;
+  &:active,
+  :hover {
+    background-color: $color-liaMild;
+    color: white;
+    border-radius: 50px;
+  }
+}
+.active-page {
+  @extend .page-num;
+  background-color: $color-liaMild;
+  color: white;
+  border-radius: 50px;
+}

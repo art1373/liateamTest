@@ -1,0 +1,14 @@
+@import "../App.scss";
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  min-height: 80vh;
+  @include breakpoint(sm) {
+    display: inline;
+  }
+}
+.heading {
+  width: 75%;
+  margin: auto auto 1rem;
+}

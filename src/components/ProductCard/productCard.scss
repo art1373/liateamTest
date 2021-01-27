@@ -1,0 +1,58 @@
+@import "../../App.scss";
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 263px;
+  height: 370px;
+  text-align: center;
+  margin: 20px auto 0px;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 3px 6px;
+  margin: 20px auto 0px;
+  transition: all 0.5s ease 0s;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.61) 0px 3px 6px;
+    transition: all 0.5s ease 0s;
+  }
+}
+
+.prod-img {
+  width: 10rem;
+  height: 100px;
+}
+.new {
+  display: block;
+  border-radius: 20px;
+  border: 1px solid $color-liaMild;
+  width: 79px;
+  text-align: center;
+  color: $color-liaMild;
+  height: 24px;
+  margin: 10px;
+}
+.txt {
+  text-align: center;
+}
+.volume {
+  @extend .txt;
+  color: $color-liaBold;
+}
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  .price {
+    @extend .txt;
+    width: 170px;
+    :hover > & {
+      background: $color-liaMild;
+      border-radius: 0 39px 39px 0;
+      color: white;
+      box-shadow: rgba(0, 0, 0, 0.61) 0px 3px 6px;
+    }
+  }
+}

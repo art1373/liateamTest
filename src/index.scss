@@ -1,0 +1,22 @@
+@font-face {
+  font-family: IranYekan;
+  src: url("./assets/fonts/Yekan.ttf");
+}
+
+html,
+body {
+  margin: 0;
+  font-family: IranYekan, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  direction: rtl;
+  min-height: calc(100vh - 215px - 50px);
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

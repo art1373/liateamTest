@@ -1,0 +1,22 @@
+@import "../../App.scss";
+.catgorie-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  &:hover {
+    cursor: pointer;
+    color: white;
+  }
+  @include breakpoint(sm) {
+    margin: auto 0 11px;
+  }
+}
+.catg-banner {
+  width: 557px;
+  height: 276px;
+  @include breakpoint(sm) {
+    width: 356px;
+    height: 207px;
+  }
+}

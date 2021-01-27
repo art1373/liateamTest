@@ -1,0 +1,88 @@
+@import "../../App.scss";
+
+.nav-list {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+  width: 80%;
+  font-size: 1rem;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid $color-navInactive;
+  margin: auto;
+  padding: 5px;
+  @include breakpoint(md) {
+    :not(:first-child) {
+      display: none;
+      margin: auto;
+    }
+    a {
+      margin: auto;
+    }
+  }
+}
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  justify-content: space-between;
+  .nav-items {
+    color: $color-navInactive;
+    &:hover {
+      color: black;
+      cursor: pointer;
+    }
+  }
+}
+.second-nav-wrapper {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  margin-top: 1rem;
+  @include breakpoint(md) {
+    direction: ltr;
+  }
+}
+
+.second-nav-row {
+  display: flex;
+  justify-content: space-evenly;
+  width: 47%;
+  margin: 0 8rem;
+  .nav-links {
+    @extend .nav-items;
+    &:hover {
+      border-bottom: 4px solid $color-liaBold;
+      cursor: pointer;
+    }
+  }
+  @include breakpoint(md) {
+    display: none;
+    direction: ltr;
+  }
+}
+.cart-stick {
+  position: relative;
+  background-color: #ec407a;
+  width: 22px;
+  height: 22px;
+  right: -25%;
+  top: -60%;
+  text-align: center;
+  font-size: 13px;
+  line-height: 22px;
+  font-weight: 700;
+  color: white;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ec407a;
+  border-radius: 50%;
+  @include breakpoint(sm) {
+    right: -50%;
+  }
+}
+.cart-holder {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}

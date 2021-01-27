@@ -1,0 +1,18 @@
+@import "../../App.scss";
+
+.button {
+  text-align: center;
+  height: 51px;
+  width: 223px;
+  background: $color-Button;
+  border-radius: 8px;
+  line-height: 3rem;
+  font-weight: bold;
+  font-family: IranYekan;
+  &:hover {
+    cursor: pointer;
+    background-color: #ff4478;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+  }
+}
